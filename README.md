@@ -25,6 +25,10 @@ Built using modern technologies such as **Bootstrap** and **Django**, "Job Me" a
 - [Acknowledgements](#acknowledgements)
 - [License](#license)
 
+There is infinite value, to recruiters and candidates alike, to develop this project further and realize its full potential. 
+Why? Because no single platform currently offers a truly unified solution with every tool and assessment type, particulalry with an appreciation for the importance of 'soft skills'.
+While using a combination of platforms like LinkedIn, Teal, and Indeed can come close to acheiving this, however the key [future features](#future-features) this platform could offer would fill a rare and significant gap in the market.  
+
 ## [Features](#features)
 
 - **Hero Section**: A landing page with a call-to-action encouraging users to prepare for tech interviews.
@@ -37,6 +41,15 @@ Built using modern technologies such as **Bootstrap** and **Django**, "Job Me" a
 - **Progress Tracking**: Track progress across tech categories with visual representations and percentage-based completion indicators for each technology.
 - **Technology Overview**: Displays categories and technologies, with descriptions and progress tracking for each technology, allowing users to monitor their progress in mastering each tech skill.
 - **Question Detail Page**: View detailed questions related to specific technologies, with the ability to toggle the answer visibility and mark knowledge status as "Good," "Repeat," or "Bad."
+
+### [Future features](#future-features)
+Given how the tech industry is valuing what are often referred to as 'soft skills', this platform has plannned to include more emhasis on soft skill assessment. Recruiters are increasingly integrating these kinds of assesments into their matching algorithms to better align candidates with projects that fit not just their technical qualifications but also their:
+    - interpersonal abilities;
+    - professional temperament; 
+    - ffectivecommunication
+    - adaptability
+
+These highly sought after qualities are essential to the success of projects that require intensive collaboration within and across teams.
 
 ## [Design](#design)
 
