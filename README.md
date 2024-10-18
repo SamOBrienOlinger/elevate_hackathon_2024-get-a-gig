@@ -151,6 +151,7 @@ To ensure the reliability and functionality of the **Job Me** platform, several 
 - **Responsive Design Testing**: The platform was tested on different screen sizes to ensure mobile, tablet, and desktop responsiveness.
 
 For example, Lighthouse was used to test Performance, Accessibility, Best Practices and Search Engine Optimization.
+
   ![Desktop Performance](static/images/read-me-images/lighthouse-desktop.png)
 
 ## [Contributing](#contributing)
@@ -176,6 +177,8 @@ Below are noteworthy resources and inspirational materials:
 ## [Acknowledgements](#acknowledgements)
 
 Special thanks to our Facilitator, Erik Vodopivec Forsman, the Code Institute Community Team and the amazing people on the Hackteam who give up their time to make it all happen.
+
+![Code Institute's October hackathon logo](static/images/read-me-images/elevate-2024-logo.png)
 
 ![CI Volunteers Image](static/images/read-me-images/hackteem.png)
 
