@@ -25,7 +25,7 @@ Built using modern technologies such as **Bootstrap** and **Django**, "Job Me" a
 - [Acknowledgements](#acknowledgements)
 - [License](#license)
 
-There is infinite value, to recruiters and candidates alike, to develop this project further and realize its full potential. 
+There is infinite value, to recruiters and candidates alike, to develop this project further and realize its full potential.
 Why? Because no single platform currently offers a truly unified solution with every tool and assessment type, particulalry with an appreciation for the importance of 'soft skills'.
 While using a combination of platforms like LinkedIn, Teal, and Indeed can come close to acheiving this, however the key [future features](#future-features) this platform could offer would fill a rare and significant gap in the market.  
 
@@ -43,9 +43,10 @@ While using a combination of platforms like LinkedIn, Teal, and Indeed can come 
 - **Question Detail Page**: View detailed questions related to specific technologies, with the ability to toggle the answer visibility and mark knowledge status as "Good," "Repeat," or "Bad."
 
 ### [Future features](#future-features)
+
 Given how the tech industry is valuing what are often referred to as 'soft skills', this platform has plannned to include more emhasis on soft skill assessment. Recruiters are increasingly integrating these kinds of assesments into their matching algorithms to better align candidates with projects that fit not just their technical qualifications but also their:
     - interpersonal abilities;
-    - professional temperament; 
+    - professional temperament;
     - ffectivecommunication
     - adaptability
 
