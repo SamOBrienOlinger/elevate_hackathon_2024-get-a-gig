@@ -4,7 +4,7 @@ A career-preparation website created by The Gig Getters for the Code Institute O
 
 **Python · Django**
 
-[Getting started](#getting-started) · [Repository guide](#repository-guide) · [Checks](#checks-and-review) · [Credits](#credits-and-reuse)
+[Getting started](#getting-started) · [Data model](#entity-relationship-diagrams) · [Repository guide](#repository-guide) · [Checks](#checks-and-review) · [Credits](#credits-and-reuse)
 
 ## What you can explore
 
@@ -13,6 +13,74 @@ A career-preparation website created by The Gig Getters for the Code Institute O
 - Accounts, profile features and an administrative interface.
 
 > **Project notes:** This repository is Sam’s fork of the team project. Deployment and third-party authentication/storage services require their own configuration.
+
+## Entity relationship diagrams
+
+### Interview question library
+
+A category groups technologies. Each technology has modules, each module has topics, and each topic has interview questions. [Question library models](job_me/models.py)
+
+```mermaid
+erDiagram
+    accTitle: Job Me interview question hierarchy
+    accDescr: Categories group technologies, technologies group modules, and modules group topics. Interview questions belong to a topic.
+    Module }o..|| Technology : "belongs to"
+    Technology }o..|| Category : "belongs to"
+    Module ||..o{ Topic : covers
+    Topic ||..o{ Question : contains
+
+    Category {
+        bigint id PK
+        string name
+    }
+    Technology {
+        bigint id PK
+        bigint category_id FK
+        string name
+    }
+    Module {
+        bigint id PK
+        bigint technology_id FK
+        string title
+    }
+    Topic {
+        bigint id PK
+        bigint module_id FK
+        string title
+    }
+    Question {
+        bigint id PK
+        bigint topic_id FK
+        string difficulty
+    }
+```
+
+### Practice progress
+
+Question knowledge links a member profile to a question, with one status per profile and question pair. Technology progress links a member profile to a technology and stores a percentage. Both models call their profile reference `user`. [Practice models](job_me/models.py) · [Member profile](users/models.py)
+
+```mermaid
+erDiagram
+    accTitle: Job Me practice progress schema
+    accDescr: A profile tracks question knowledge and technology progress. Each record refers to one profile and one question or technology.
+    "User Profile" ||..o{ "Question Knowledge" : tracks
+    Question ||..o{ "Question Knowledge" : "assessed in"
+    "User Profile" ||..o{ "Technology Progress" : tracks
+    Technology ||..o{ "Technology Progress" : "measured in"
+
+    "Question Knowledge" {
+        bigint id PK
+        bigint user_id FK
+        bigint question_id FK
+        string knowledge_status
+    }
+    "Technology Progress" {
+        bigint id PK
+        bigint user_id FK
+        bigint technology_id FK
+        int progress_percentage
+    }
+```
 
 ## Getting started
 
